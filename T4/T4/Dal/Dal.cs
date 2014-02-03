@@ -11,19 +11,20 @@ namespace T4.Dal
     {
         public static void Main() //detta fungerar! Hurra!!
         {
+            Controller.Controller c = new Controller.Controller();
             Dal d = new Dal();
             Console.WriteLine(d.TestarSql());
         }
         SqlConnection sc = new SqlConnection("Data Source=DAVID-PC;Integrated Security=SSPI;Initial Catalog=T4");
-        SqlCommand cmd;
+        SqlCommand sqlString;
 
         public string TestarSql()
         {
             sc.Open();
-            cmd = new SqlCommand("Insert into whore values('Kenny')", sc);
-            cmd.ExecuteNonQuery();
+            sqlString = new SqlCommand("insert into users values('Sara', 'Nilsson', 'email@gmail.com', '0707')", sc);
+            sqlString.ExecuteNonQuery();
             sc.Close();
-            return "Success";
+            return "Successfully registered";
         }
     }
 }
