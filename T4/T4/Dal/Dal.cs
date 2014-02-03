@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace T4
+namespace T4.Dal
 {
     class Dal
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("h3e4r5t6ej");
-        }
     }
 }
