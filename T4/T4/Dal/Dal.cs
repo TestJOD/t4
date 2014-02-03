@@ -10,7 +10,7 @@ namespace T4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hej");
+            Console.WriteLine("h3e4r5t6ej");
         }
     }
 }
