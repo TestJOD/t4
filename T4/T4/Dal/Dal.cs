@@ -16,6 +16,10 @@ namespace T4.Dal
             Console.WriteLine(d.TestarSql());
         }
         SqlConnection sc = new SqlConnection("Data Source=DAVID-PC;Integrated Security=SSPI;Initial Catalog=T4");
+        //connection för David: Data Source=DAVID-PC;Integrated Security=SSPI;Initial Catalog=T4
+        //connection för Jocke: 
+        //connecton för Olle: 
+
         SqlCommand sqlString;
 
         public string TestarSql()
